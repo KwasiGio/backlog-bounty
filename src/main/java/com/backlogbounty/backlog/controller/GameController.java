@@ -31,5 +31,27 @@ public class GameController {
     public Game createGame(@RequestBody Game game) {
         return gameRepository.save(game);
     }
+    @PutMapping("/{id}")
+    public ResponseEntity<Game> updateGame(@PathVariable Long id, @RequestBody Game updateGame) {
+        return gameRepository.findById(id)
+                .map(game -> {
+                    game.setTitle(updateGame.getTitle());
+                    game.setGenre(updateGame.getGenre());
+                    game.setPlatform(updateGame.getPlatform());
+                    game.setStatus(updateGame.getStatus());
+                    game.setNotes(updateGame.getNotes());
+                    return ResponseEntity.ok(gameRepository.save(game));
+                })
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Game not found"));
+    }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteGame(@PathVariable Long id) {
+        if (!gameRepository.existsById(id)) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Game not found");
+        }
+        gameRepository.deleteById(id);
+        return ResponseEntity.noContent().build();
+
+    }
 }
