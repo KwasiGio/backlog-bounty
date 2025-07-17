@@ -2,6 +2,8 @@ package com.backlogbounty.backlog.model;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 public class Game {
 
@@ -75,4 +77,6 @@ public class Game {
     public void setPlatform(String platform) {
         this.platform = platform;
     }
+    @OneToMany(mappedBy = "game", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Reviews> reviews;
 }
