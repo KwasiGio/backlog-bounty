@@ -1,6 +1,7 @@
 package com.backlogbounty.backlog.controller;
 
 import org.springframework.cglib.core.Local;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import com.backlogbounty.backlog.model.Game;
@@ -12,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 import java.time.LocalDateTime;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/games/{gameId}/reviews")
@@ -35,5 +37,28 @@ public class ReviewController {
     @GetMapping
     public List<Reviews> getReviews(@PathVariable Long gameId) {
         return reviewsRepository.findByGameId(gameId);
+    }
+    @DeleteMapping
+    public ResponseEntity<Void> deleteReview(@PathVariable Long reviewId) {
+        reviewsRepository.deleteById(reviewId);
+        return ResponseEntity.noContent().build();
+    }
+    @PutMapping
+    public ResponseEntity<Reviews> updateReview(
+            @PathVariable Long reviewId,
+            @RequestBody Reviews updatedReviewData
+
+    ) {
+        Optional<Reviews> existingReview = reviewsRepository.findById(reviewId);
+        if(existingReview.isPresent()) {
+            Reviews review = existingReview.get();
+            review.setText(updatedReviewData.getText());
+            review.setRating(updatedReviewData.getRating());
+
+            reviewsRepository.save(review);
+            return ResponseEntity.ok(review);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }

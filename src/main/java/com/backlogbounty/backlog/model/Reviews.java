@@ -11,6 +11,25 @@ public class Reviews {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    public long getId() {
+        return id;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public Game getGame() {
+        return game;
+    }
 
     private String text;
     private int rating;
