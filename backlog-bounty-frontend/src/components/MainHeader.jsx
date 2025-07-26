@@ -1,11 +1,30 @@
 
-const MainHeader = () => {
+const MainHeader = ({ handleHover, handleLeave }) => {
     return (
-        <header style={StyleSheet.header}>
-            <h1 style={StyleSheet.title}>Backlog Bounty</h1>
-            <p style={StyleSheet.subtitle}>Track, review and conquer your gaming backlog.</p>
-            <button style={StyleSheet.cta}>Start Logging Games</button>
-        </header>
+        <div className ="header">
+            <h1>Welcome to Backlog Bounty</h1>
+            <p>Track the progress of your games, write reviews, complete your backlog and more.</p>
+        <div className="featured-buttons">
+            <button
+                onMouseEnter={() => handleHover('image.jpg')}
+                onMouseLeave={handleLeave}
+            >
+                Try placeholder value
+                </button>
+            <button
+                onMouseEnter={() => handleHover('image.jpg')}
+                onMouseLeave={handleLeave}
+            >
+                Discover placeholder
+            </button>
+            <button
+                onMouseEnter={() => handleHover('image.jpg')}
+                onMouseLeave={handleLeave}
+            >
+                Play placeholder
+            </button>
+        </div>
+    </div>
     );
 };
 

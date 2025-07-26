@@ -1,0 +1,31 @@
+.navbar {
+    background: url('Ghost.jpg') no-repeat center center/cover;
+    height:120px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 40px;
+    background-color: rgba(0,0,0,0.6);
+    color:white;
+}
+
+.navbar-logo {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 4rem;
+}
+
+.navbar-links a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.navbar-links a:hover {
+    color: #00bfff;
+}
