@@ -1,6 +1,7 @@
 # Backlog Bounty 🎮
 
 Backlog Bounty is a full stack web app for tracking video game progress, reviews and goals. Built as a portfolio project to showcase skills in backend development, cloud deployment and the use of modern web frameworks.
+
 --
 ### Features:
 - ✅ Add, view, update, and delete games (CRUD functionality)
