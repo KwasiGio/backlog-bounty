@@ -1,6 +1,8 @@
 # Backlog Bounty 🎮
+**Backlog Bounty** is a full stack web app for managing your video game library, tracking progress, logging reviews for other users, and setting gaming goals.
 
-Backlog Bounty is a full stack web app for tracking video game progress, reviews and goals. Built as a portfolio project to showcase skills in backend development, cloud deployment and the use of modern web frameworks.
+Backlog Bounty was designed to simulate real-world engineering practices and showcase full-stack development skills using Java (Spring Boot), PostgreSQL, and React (WIP).
+
 ## Features:
 - ✅ Add, view, update, and delete games (CRUD functionality)
 - ✅ Add reviews and notes to games
@@ -11,7 +13,8 @@ Backlog Bounty is a full stack web app for tracking video game progress, reviews
 
 ## 💼 Why it matters
 
-This project is attempting to simulate real-world engineering practices for my own learning:
+This project is built to solve a familiar problem for gamers: keeping track of a growing backlog. Backlog Bounty helps users organize and document their game progress in one place.
+
 
 - RESTful API architecture with clear endpoints
 - Structured backend using Spring Boot with layered services
