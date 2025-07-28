@@ -36,6 +36,31 @@ This project is attempting to simulate real-world engineering practices for my o
 - [ ] Complete frontend
 - [ ] Deploy full stack to Azure
 
+
+## 📸 Backend Functionality
+The backend of this project is fully functional as intended. It will include more functions in the future. Below are visual demonstrations of a few key features tested using Postman.
+
+---
+### 🟢 POST /games
+Create a new game entry by sending JSON data via Postman.
+![POST1 /games](screenshots/post-game1.png)
+![POST2 /games](screenshots/post-game2.png)
+
+### 🟡 GET /games
+Retrieve all saved games from the database.
+![GET1 /games](./screenshots/get-game1.png)
+![GET2 /games](./screenshots/get-game2.png)
+
+### 🔄 PUT /games/{id}
+Update an existing game's details using its ID.
+
+![PUT /games](./screenshots/put-game1.png)
+![PUT /games](./screenshots/put-game2.png)
+
+### 🗃️ PostgreSQL Table View (pgAdmin)
+Game data is persisted in PostgreSQL. Below is a snapshot of the database table after insertion.
+
+![pgAdmin Table](./screenshots/post-gresql.png)
 ## 🚀 Quick Start (Backend, Frontend WIP)
 
 ```bash
