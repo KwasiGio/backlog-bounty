@@ -40,7 +40,7 @@ This project is attempting to simulate real-world engineering practices for my o
 ## 📸 Backend Functionality
 The backend of this project is fully functional as intended. It will include more functions in the future. Below are visual demonstrations of a few key features tested using Postman.
 
----
+
 ### 🟢 POST /games
 Create a new game entry by sending JSON data via Postman.
 ![POST1 /games](screenshots/post-game1.png)
