@@ -4,19 +4,23 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:20px 40px;
+    padding:1px 0px;
     background-color: rgba(0,0,0,0.6);
     color:white;
 }
 
 .navbar-logo {
-    font-size: 1rem;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-links {
     display: flex;
-    gap: 4rem;
+    justify-content:flex-start;
+    gap: 10rem;
+}
+.navbar-links a:last-child {
+    margin-right: 500px;
 }
 
 .navbar-links a{
@@ -28,4 +32,11 @@
 
 .navbar-links a:hover {
     color: #00bfff;
+}
+
+.logo-image {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
