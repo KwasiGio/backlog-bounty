@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './NavBar.css';
 import logo from './Bounty.png';
 
@@ -9,11 +9,11 @@ const NavBar = () => {
             <img src ={logo} alt="Backlog Bounty Logo" className="logo-image" />
             </div>
             <div className ="navbar-links">
-            <Link to="/">Home</Link>
-            <Link to="/games">Games</Link>
-            <Link to="/reviews">Reviews</Link>
-            <Link to="/progress">Progress</Link>
-            <Link to="/stats">Stats</Link> 
+            <NavLink to="/" end>HOME</NavLink>
+            <NavLink to="/games">GAMES</NavLink>
+            <NavLink to="/reviews">REVIEWS</NavLink>
+            <NavLink to="/progress">PROGRESS</NavLink>
+            <NavLink to="/stats">STATS</NavLink> 
         </div>
     </div>
     );

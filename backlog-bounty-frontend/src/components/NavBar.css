@@ -1,12 +1,15 @@
 .navbar {
-    background: url('Ghost.jpg') no-repeat center center/cover;
-    height:120px;
+    background: url('night.png') no-repeat center center/cover;
+    background-position: center 45%;
+    height:150px;
     display:flex;
     align-items:center;
     justify-content:space-between;
     padding:1px 0px;
     background-color: rgba(0,0,0,0.6);
+    transition: background-color 0.3s ease-in-out;
     color:white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar-logo {
@@ -19,6 +22,7 @@
     justify-content:flex-start;
     gap: 10rem;
 }
+
 .navbar-links a:last-child {
     margin-right: 500px;
 }
@@ -30,10 +34,10 @@
     font-weight: bold;
 }
 
-.navbar-links a:hover {
-    color: #00bfff;
+.navbar-links a.active {
+    color: cornflowerblue;
+    
 }
-
 .logo-image {
   height: 100px;
   width: auto;
