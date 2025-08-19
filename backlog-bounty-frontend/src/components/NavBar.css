@@ -24,7 +24,7 @@
 }
 
 .navbar-links a:last-child {
-    margin-right: 500px;
+    margin-right: 100px;
 }
 
 .navbar-links a{
@@ -39,7 +39,7 @@
     
 }
 .logo-image {
-  height: 100px;
+  height: 55px;
   width: auto;
   object-fit: contain;
   display: block;
