@@ -1,9 +1,9 @@
-
+import './MainHeader.css';
 const MainHeader = ({ handleHover, handleLeave }) => {
     return (
         <div className ="header">
-            <h1>Welcome to Backlog Bounty</h1>
-            <p>Track the progress of your games, write reviews, complete your backlog and more.</p>
+            <h1>CONQUER YOUR BACKLOG.<br /> ONE GAME AT A TIME.</h1>
+            <p>C</p>
         <div className="featured-buttons">
             <button
                 onMouseEnter={() => handleHover('image.jpg')}
