@@ -1,17 +1,30 @@
 .navbar {
     background: url('night.png') no-repeat center center/cover;
     background-position: center 45%;
-    height:150px;
+    height:10rem;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:1px 0px;
+    padding:0.25rem 0rem;
     background-color: rgba(0,0,0,0.6);
     transition: background-color 0.3s ease-in-out;
     color:white;
     font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 1;
 }
 
+.navbar::before {
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+
+}
 .navbar-logo {
     display: flex;
     align-items: center;
@@ -21,10 +34,11 @@
     display: flex;
     justify-content:flex-start;
     gap: 10rem;
+    z-index: 2;
 }
 
 .navbar-links a:last-child {
-    margin-right: 100px;
+    margin-right: 10rem;
 }
 
 .navbar-links a{
@@ -43,4 +57,5 @@
   width: auto;
   object-fit: contain;
   display: block;
+  z-index: 3;
 }
