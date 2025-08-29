@@ -1,3 +1,7 @@
+![WIP FRONTEND](screenshots/frontendWIP.png)
+
+
+
 # Backlog Bounty 🎮
 **Backlog Bounty** is a full stack web app for managing your video game library, tracking progress, logging reviews for other users, and setting gaming goals.
 
