@@ -1,3 +1,25 @@
 .game-card {
-   height: 10rem; 
+    width: 10rem;
+   height: 15rem; 
+   border: 1px solid powderblue;
+   position: relative;
+   z-index: 2;
+}
+.games-grid {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+}
+.game-card img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%
+}
+.popular-games-container {
+    text-align: center;
+}
+.game-buttons {
+    position: absolute;
+    z-index: 1;
+
 }

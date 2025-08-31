@@ -1,14 +1,20 @@
-const PopularGames = () => {
+import './PopularGames.css';
+const PopularGames = ({handleHover, handleLeave}) => {
     const GamesData = [
         {
             id: 1,
             title: "Ghost of Tsushima",
-            image: "https://via.placeholder.com/150"
+            image: "https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Ghost_of_Tsushima.jpg/250px-Ghost_of_Tsushima.jpg"
         },
         {
             id: 2,
             title: "God of War",
-            image: "https://via.placeholder.com/150"
+            image: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/God_of_War_4_cover.jpg/250px-God_of_War_4_cover.jpg"
+        },
+        {   id:3,
+            title: "Rise of the Ronin",
+            image: "https://upload.wikimedia.org/wikipedia/en/b/bf/Rise_of_the_Ronin_Key_Art.jpg"
+        
         }
     ]
     return (
@@ -20,6 +26,14 @@ const PopularGames = () => {
                         <img src={game.image} alt={game.title} />
                     <p>{game.title}</p>
                     <span>{game.status}</span>
+                    <button
+                        onMouseEnter={() => handleHover('image.jpg')}
+                        onMouseLeave={handleLeave}
+                        >
+                            {game.title}
+                    </button>
+                                
+
                     </div>
                     ))}
             </div>

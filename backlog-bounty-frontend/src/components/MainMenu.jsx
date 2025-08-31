@@ -29,7 +29,7 @@ const MainMenu = () => {
             >
             <NavBar />
             <MainHeader handleHover={handleHover} handleLeave={handleLeave}  />
-            <PopularGames />
+            <PopularGames handleHover={handleHover} handleLeave={handleLeave} />
             <NewGames />
             <Footer />
         </div>

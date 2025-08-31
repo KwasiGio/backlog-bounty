@@ -3,19 +3,18 @@ const MainHeader = ({ handleHover, handleLeave }) => {
     return (
         <div className ="header">
             <h1>CONQUER YOUR BACKLOG.<br /> ONE GAME AT A TIME.</h1>
-            <p>C</p>
         <div className="featured-buttons">
             <button
                 onMouseEnter={() => handleHover('image.jpg')}
                 onMouseLeave={handleLeave}
             >
-                Try placeholder value
+                SIGN UP 
                 </button>
             <button
                 onMouseEnter={() => handleHover('image.jpg')}
                 onMouseLeave={handleLeave}
             >
-                Discover placeholder
+                DISCOVER
             </button>
             <button
                 onMouseEnter={() => handleHover('image.jpg')}
