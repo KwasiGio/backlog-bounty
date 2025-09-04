@@ -1,4 +1,5 @@
-![WIP FRONTEND](screenshots/frontendWIP.png)
+# Progress Snapshot 04/09/2025
+![WIP FRONTEND](screenshots/frontendWIP2.png)
 
 
 
