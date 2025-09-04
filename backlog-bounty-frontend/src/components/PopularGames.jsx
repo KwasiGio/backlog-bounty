@@ -1,4 +1,5 @@
 import './PopularGames.css';
+import {Link} from 'react-router-dom';
 const PopularGames = ({handleHover, handleLeave}) => {
     const GamesData = [
         {
@@ -22,20 +23,16 @@ const PopularGames = ({handleHover, handleLeave}) => {
             <h2>Trending Now</h2>
             <div className= "games-grid">
                 {GamesData.map((game) => (
-                    <div key={game.id} className="game-card">
-                        <img src={game.image} alt={game.title} />
-                    <p>{game.title}</p>
-                    <span>{game.status}</span>
-                    <button
-                        onMouseEnter={() => handleHover('image.jpg')}
-                        onMouseLeave={handleLeave}
-                        >
-                            {game.title}
-                    </button>
-                                
-
-                    </div>
-                    ))}
+                    <Link to={'/games'} key={game.id} className = "game-link">
+                        <div className="game-card">
+                            <img src={game.image} alt={game.title} />
+                            <span>{game.status}</span>
+                            <div className="overlay">
+                                <p>{game.title}</p>
+                            </div>
+                        </div>
+                    </Link>
+                ))}
             </div>
         </div>
     )

@@ -3,7 +3,7 @@
    height: 15rem; 
    border: 1px solid powderblue;
    position: relative;
-   z-index: 2;
+   overflow: hidden;
 }
 .games-grid {
     display: flex;
@@ -18,8 +18,26 @@
 .popular-games-container {
     text-align: center;
 }
-.game-buttons {
+.game-card:hover .overlay {
+    opacity: 1;
+}
+.overlay {
+    top: 0;
+    left: 0;
     position: absolute;
-    z-index: 1;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items:center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    justify-content: center;
+    flex-direction: column;
 
+}
+
+.game-link:link {
+    color: solid white;
 }
