@@ -15,6 +15,7 @@ Backlog Bounty was designed to simulate real-world engineering practices and sho
 - ✅ Built-in RESTful API using Spring Boot
 - ✅ PostgreSQL integration allowing for data persistence.
 - ❗Frontend WIP using React
+- ❗Connection to PowerBI dashboards using PostgreSQL database.
 
 ## 💼 Why it matters
 
@@ -43,6 +44,7 @@ This project is built to solve a familiar problem for gamers: keeping track of a
 - [x] Get started on React frontend
 - [ ] Complete frontend
 - [ ] Deploy full stack to Azure
+- [ ] Employ PowerBI dashboards with data from PostgreSQL
 
 
 ## 📸 Backend Functionality
