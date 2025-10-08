@@ -20,7 +20,7 @@ const PopularGames = ({handleHover, handleLeave}) => {
     ]
     return (
         <div className="popular-games-container">
-            <h2>Trending Now</h2>
+            <h2 className ="trending-title">Trending Now</h2>
             <div className= "games-grid">
                 {GamesData.map((game) => (
                     <Link to={'/games'} key={game.id} className = "game-link">
