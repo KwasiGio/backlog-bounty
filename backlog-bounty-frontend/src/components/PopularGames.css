@@ -1,9 +1,10 @@
 .game-card {
     width: 10rem;
    height: 15rem; 
-   border: 1px solid powderblue;
+   border: 1px solid rgb(44, 34, 93);
    position: relative;
    overflow: hidden;
+   border-radius: 16px
 }
 .games-grid {
     display: flex;
@@ -13,7 +14,9 @@
 .game-card img {
     width: 100%;
     object-fit: cover;
-    height: 100%
+    height: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
 .popular-games-container {
     text-align: center;
